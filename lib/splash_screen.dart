@@ -16,8 +16,8 @@ class SplashScreen extends StatelessWidget {
           case ProductsUpdate:
             Future.delayed(
               const Duration(seconds: 1),
-              () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => const Wrapper())),
+              () => Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (_) => const Wrapper())),
             );
           default:
             break;

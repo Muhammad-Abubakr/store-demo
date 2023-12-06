@@ -45,6 +45,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
     } else if (state is CategoriesUpdate) {
       return CustomScrollView(slivers: <Widget>[
         SliverAppBar(
+          automaticallyImplyLeading: false,
           expandedHeight: isLandscape ? 0.12.sw : 0.12.sh,
           toolbarHeight: isLandscape ? 0.12.sw : 0.12.sh,
           flexibleSpace: Padding(
