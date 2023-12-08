@@ -81,7 +81,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
             padding: EdgeInsets.symmetric(horizontal: 0.05.sw),
             sliver: SliverList.builder(
               itemBuilder: (_, index) {
-                var product = getProduct(favourites[index]);
+                var product = favouriteProducts![index];
 
                 return Container(
                   margin: EdgeInsets.symmetric(vertical: 32.r),
